@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StepBarView: View {
     @ObservedObject var model = HealthStore()
     var body: some View {
             BarMarkChart(model: model)
@@ -25,5 +25,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    StepBarView()
 }
