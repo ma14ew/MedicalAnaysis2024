@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var model = HealthStore()
     var body: some View {
-        BarMarkChart(model: model)
+            BarMarkChart(model: model)
         .padding()
         .task {
             await model.requestAuthorization()

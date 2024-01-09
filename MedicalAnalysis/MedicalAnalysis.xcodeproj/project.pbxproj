@@ -13,6 +13,7 @@
 		177059DE2B4C31C20047322B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177059DD2B4C31C20047322B /* Preview Assets.xcassets */; };
 		177059E72B4C31F90047322B /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059E62B4C31F90047322B /* HealthStore.swift */; };
 		177059EA2B4C344A0047322B /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059E92B4C344A0047322B /* Bar.swift */; };
+		177059ED2B4CCBC60047322B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059EC2B4CCBC60047322B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		177059E62B4C31F90047322B /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		177059E82B4C330E0047322B /* MedicalAnalysis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalAnalysis.entitlements; sourceTree = "<group>"; };
 		177059E92B4C344A0047322B /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		177059EC2B4CCBC60047322B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				177059D82B4C31BC0047322B /* ContentView.swift */,
 				177059E92B4C344A0047322B /* Bar.swift */,
 				177059E62B4C31F90047322B /* HealthStore.swift */,
+				177059EC2B4CCBC60047322B /* Model.swift */,
 				177059DA2B4C31C20047322B /* Assets.xcassets */,
 				177059DC2B4C31C20047322B /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177059ED2B4CCBC60047322B /* Model.swift in Sources */,
 				177059EA2B4C344A0047322B /* Bar.swift in Sources */,
 				177059D92B4C31BC0047322B /* ContentView.swift in Sources */,
 				177059E72B4C31F90047322B /* HealthStore.swift in Sources */,

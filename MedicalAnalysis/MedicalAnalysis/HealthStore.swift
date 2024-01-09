@@ -4,22 +4,14 @@
 //
 //  Created by Матвей Матюшко on 08.01.2024.
 //
-
-
 import Foundation
 import HealthKit
 
-struct Step: Identifiable {
-    let id = UUID()
-    let count: Int
-//    let date: Date
-    let date: String
-}
-
 class HealthStore: ObservableObject {
+
     @Published var steps: [Step] = []
-   @Published var healthStore: HKHealthStore?
-    var error: Error?
+    @Published var healthStore: HKHealthStore?
+    
     init() {
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
@@ -27,36 +19,34 @@ class HealthStore: ObservableObject {
             print("error")
         }
     }
-    private func makeDate(date: Date) -> String {
+
+    private func makeSimpleDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "DD-MM"
-
         return formatter.string(from: date)
     }
+
     func calculateSteps() async throws {
         guard let healthStore = self.healthStore else { return }
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "DD-MM"
-        
+
         let calendar = Calendar(identifier: .gregorian)
         let startDate = calendar.date(byAdding: .day, value: -7, to: Date())
         let endDate = Date()
-        
+
         let stepType = HKQuantityType(.stepCount)
         let everyDay = DateComponents(day: 1)
         let thisWeek = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         let stepThisWeek = HKSamplePredicate.quantitySample(type: stepType, predicate: thisWeek)
-        
+
         let sumOfStepsQuery = HKStatisticsCollectionQueryDescriptor(predicate: stepThisWeek, options: .cumulativeSum, anchorDate: endDate, intervalComponents: everyDay)
-        
+
         let stepsCount = try await sumOfStepsQuery.result(for: healthStore)
-        
+
         guard let startDate = startDate else { return }
-        
+
         stepsCount.enumerateStatistics(from: startDate, to: endDate) { statistic, stop in
             let count = statistic.sumQuantity()?.doubleValue(for: .count())
-            let step = Step(count: Int(count ?? 0), date: self.makeDate(date: statistic.startDate))
+            let step = Step(count: Int(count ?? 0), date: self.makeSimpleDate(date: statistic.startDate))
             if step.count > 0 {
                 DispatchQueue.main.async {
                     self.steps.append(step)
@@ -64,7 +54,7 @@ class HealthStore: ObservableObject {
             }
         }
     }
-    
+
     func requestAuthorization() async {
         guard let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount) else { return }
         guard let healthStore = self.healthStore else { return }
