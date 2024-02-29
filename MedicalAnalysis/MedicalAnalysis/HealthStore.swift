@@ -12,6 +12,8 @@ class HealthStore: ObservableObject {
     @Published var steps: [Step] = []
     @Published var healthStore: HKHealthStore?
     
+    var mlModel = diabet()
+    
     init() {
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
@@ -64,5 +66,15 @@ class HealthStore: ObservableObject {
         } catch {
             print("2error")
         }
+    }
+    
+    func predictML(model: DiabetPredictModel) -> Double {
+        guard let mlOutput = try? mlModel.prediction(age: Double(model.age) ?? 0,
+                                                     bmi:  Double(model.bmi) ?? 0,
+                                                     HbA1c_level:  Double(model.hb) ?? 0,
+                                                     blood_glucose_level:  Int64(model.blood) ?? 0) else {
+            fatalError("error")
+        }
+        return mlOutput.diabetes
     }
 }

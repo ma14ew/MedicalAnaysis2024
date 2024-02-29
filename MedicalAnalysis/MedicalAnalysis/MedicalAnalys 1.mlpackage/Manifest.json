@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "2B6144E5-029A-4F76-8212-5A17083D64EA": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "A0449E1C-8E1E-4569-99FA-D85A0AA47980": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "AB75F089-2EB8-44FF-A410-2DCADA12DBC6": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "MedicalAnalys 1.mlmodel",
+            "path": "com.apple.CoreML/MedicalAnalys 1.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "AB75F089-2EB8-44FF-A410-2DCADA12DBC6"
+}

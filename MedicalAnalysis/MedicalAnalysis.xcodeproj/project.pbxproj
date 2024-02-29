@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172EA6862B7518AE0049491B /* MedicalAnalys 1.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 172EA6852B7518AE0049491B /* MedicalAnalys 1.mlpackage */; };
+		172EA6882B7519590049491B /* Ml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172EA6872B7519590049491B /* Ml.swift */; };
+		172EA68C2B7521E20049491B /* diabet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 172EA68B2B7521E20049491B /* diabet.mlmodel */; };
 		177059D72B4C31BC0047322B /* MedicalAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */; };
 		177059D92B4C31BC0047322B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059D82B4C31BC0047322B /* ContentView.swift */; };
 		177059DB2B4C31C20047322B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177059DA2B4C31C20047322B /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172EA6852B7518AE0049491B /* MedicalAnalys 1.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = "MedicalAnalys 1.mlpackage"; sourceTree = "<group>"; };
+		172EA6872B7519590049491B /* Ml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ml.swift; sourceTree = "<group>"; };
+		172EA68B2B7521E20049491B /* diabet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = diabet.mlmodel; sourceTree = "<group>"; };
 		177059D32B4C31BC0047322B /* MedicalAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAnalysisApp.swift; sourceTree = "<group>"; };
 		177059D82B4C31BC0047322B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 				177059E92B4C344A0047322B /* Bar.swift */,
 				177059E62B4C31F90047322B /* HealthStore.swift */,
 				177059EC2B4CCBC60047322B /* Model.swift */,
+				172EA6852B7518AE0049491B /* MedicalAnalys 1.mlpackage */,
+				172EA6872B7519590049491B /* Ml.swift */,
+				172EA68B2B7521E20049491B /* diabet.mlmodel */,
 				177059DA2B4C31C20047322B /* Assets.xcassets */,
 				177059DC2B4C31C20047322B /* Preview Content */,
 			);
@@ -148,11 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172EA6862B7518AE0049491B /* MedicalAnalys 1.mlpackage in Sources */,
 				177059ED2B4CCBC60047322B /* Model.swift in Sources */,
 				177059EA2B4C344A0047322B /* Bar.swift in Sources */,
 				177059D92B4C31BC0047322B /* ContentView.swift in Sources */,
 				177059E72B4C31F90047322B /* HealthStore.swift in Sources */,
+				172EA6882B7519590049491B /* Ml.swift in Sources */,
 				177059D72B4C31BC0047322B /* MedicalAnalysisApp.swift in Sources */,
+				172EA68C2B7521E20049491B /* diabet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

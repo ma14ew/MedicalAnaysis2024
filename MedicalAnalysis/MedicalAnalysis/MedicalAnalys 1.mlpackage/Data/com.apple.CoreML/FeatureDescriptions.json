@@ -1,0 +1,21 @@
+{
+  "Outputs" : {
+    "weight" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "Inputs" : {
+    "age" : {
+      "MLFeatureShortDescription" : ""
+    },
+    "Applewatch.Steps_LE" : {
+      "MLFeatureShortDescription" : ""
+    },
+    "Applewatch.Calories_LE" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}
