@@ -59,6 +59,31 @@
 			path = "ML + HealthKit";
 			sourceTree = "<group>";
 		};
+		17597E742BBDAD2400395BCA /* PatientsList */ = {
+			isa = PBXGroup;
+			children = (
+				176412742BA1B28300746175 /* DoctorView.swift */,
+			);
+			path = PatientsList;
+			sourceTree = "<group>";
+		};
+		17597E752BBDAD4100395BCA /* DiabetPredictView */ = {
+			isa = PBXGroup;
+			children = (
+				173591502BBD9B8900F7494A /* DiabetPredictView.swift */,
+			);
+			path = DiabetPredictView;
+			sourceTree = "<group>";
+		};
+		17597E762BBDAD5100395BCA /* StepBar */ = {
+			isa = PBXGroup;
+			children = (
+				1735914E2BBD99F500F7494A /* StepBarView.swift */,
+				177059E92B4C344A0047322B /* Bar.swift */,
+			);
+			path = StepBar;
+			sourceTree = "<group>";
+		};
 		177059CA2B4C31BC0047322B = {
 			isa = PBXGroup;
 			children = (
@@ -78,15 +103,14 @@
 		177059D52B4C31BC0047322B /* MedicalAnalysis */ = {
 			isa = PBXGroup;
 			children = (
-				173591482BBD95D100F7494A /* ML + HealthKit */,
-				176412742BA1B28300746175 /* DoctorView.swift */,
 				177059E82B4C330E0047322B /* MedicalAnalysis.entitlements */,
-				177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */,
-				173591502BBD9B8900F7494A /* DiabetPredictView.swift */,
+				173591482BBD95D100F7494A /* ML + HealthKit */,
+				17597E742BBDAD2400395BCA /* PatientsList */,
+				17597E752BBDAD4100395BCA /* DiabetPredictView */,
+				17597E762BBDAD5100395BCA /* StepBar */,
 				1735914C2BBD99B700F7494A /* TabBarView.swift */,
-				1735914E2BBD99F500F7494A /* StepBarView.swift */,
-				177059E92B4C344A0047322B /* Bar.swift */,
 				177059EC2B4CCBC60047322B /* Model.swift */,
+				177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */,
 				177059DA2B4C31C20047322B /* Assets.xcassets */,
 				177059DC2B4C31C20047322B /* Preview Content */,
 			);
