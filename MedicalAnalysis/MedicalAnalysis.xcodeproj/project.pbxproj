@@ -10,9 +10,10 @@
 		173591492BBD95D100F7494A /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173591452BBD95D100F7494A /* HealthStore.swift */; };
 		1735914A2BBD95D100F7494A /* ML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173591462BBD95D100F7494A /* ML.swift */; };
 		1735914B2BBD95D100F7494A /* MlModelForDiplom 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 173591472BBD95D100F7494A /* MlModelForDiplom 1.mlmodel */; };
-		1735914D2BBD99B700F7494A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1735914C2BBD99B700F7494A /* TabBarView.swift */; };
+		1735914D2BBD99B700F7494A /* TabBarView_DIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1735914C2BBD99B700F7494A /* TabBarView_DIS.swift */; };
 		1735914F2BBD99F500F7494A /* StepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1735914E2BBD99F500F7494A /* StepBarView.swift */; };
 		173591512BBD9B8900F7494A /* DiabetPredictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173591502BBD9B8900F7494A /* DiabetPredictView.swift */; };
+		173A0C482BD16E21003D1C9B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0C472BD16E21003D1C9B /* MenuView.swift */; };
 		176412752BA1B28300746175 /* DoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176412742BA1B28300746175 /* DoctorView.swift */; };
 		177059D72B4C31BC0047322B /* MedicalAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */; };
 		177059DB2B4C31C20047322B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177059DA2B4C31C20047322B /* Assets.xcassets */; };
@@ -25,9 +26,10 @@
 		173591452BBD95D100F7494A /* HealthStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		173591462BBD95D100F7494A /* ML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML.swift; sourceTree = "<group>"; };
 		173591472BBD95D100F7494A /* MlModelForDiplom 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MlModelForDiplom 1.mlmodel"; sourceTree = "<group>"; };
-		1735914C2BBD99B700F7494A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1735914C2BBD99B700F7494A /* TabBarView_DIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView_DIS.swift; sourceTree = "<group>"; };
 		1735914E2BBD99F500F7494A /* StepBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarView.swift; sourceTree = "<group>"; };
 		173591502BBD9B8900F7494A /* DiabetPredictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetPredictView.swift; sourceTree = "<group>"; };
+		173A0C472BD16E21003D1C9B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		176412742BA1B28300746175 /* DoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorView.swift; sourceTree = "<group>"; };
 		177059D32B4C31BC0047322B /* MedicalAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAnalysisApp.swift; sourceTree = "<group>"; };
@@ -108,11 +110,12 @@
 				17597E742BBDAD2400395BCA /* PatientsList */,
 				17597E752BBDAD4100395BCA /* DiabetPredictView */,
 				17597E762BBDAD5100395BCA /* StepBar */,
-				1735914C2BBD99B700F7494A /* TabBarView.swift */,
+				1735914C2BBD99B700F7494A /* TabBarView_DIS.swift */,
 				177059EC2B4CCBC60047322B /* Model.swift */,
 				177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */,
 				177059DA2B4C31C20047322B /* Assets.xcassets */,
 				177059DC2B4C31C20047322B /* Preview Content */,
+				173A0C472BD16E21003D1C9B /* MenuView.swift */,
 			);
 			path = MedicalAnalysis;
 			sourceTree = "<group>";
@@ -195,13 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1735914D2BBD99B700F7494A /* TabBarView.swift in Sources */,
+				1735914D2BBD99B700F7494A /* TabBarView_DIS.swift in Sources */,
 				177059ED2B4CCBC60047322B /* Model.swift in Sources */,
 				1735914B2BBD95D100F7494A /* MlModelForDiplom 1.mlmodel in Sources */,
 				173591512BBD9B8900F7494A /* DiabetPredictView.swift in Sources */,
 				173591492BBD95D100F7494A /* HealthStore.swift in Sources */,
 				177059EA2B4C344A0047322B /* Bar.swift in Sources */,
 				1735914A2BBD95D100F7494A /* ML.swift in Sources */,
+				173A0C482BD16E21003D1C9B /* MenuView.swift in Sources */,
 				176412752BA1B28300746175 /* DoctorView.swift in Sources */,
 				1735914F2BBD99F500F7494A /* StepBarView.swift in Sources */,
 				177059D72B4C31BC0047322B /* MedicalAnalysisApp.swift in Sources */,
@@ -263,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -320,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -342,15 +346,17 @@
 				DEVELOPMENT_TEAM = U5P97KCFM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MedHelper+";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "I would like to record Sessions for demoing to readers";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "I would like to record Sessions for demoing to readers";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "I would like to update your Mindful Sessions for demoing to readers";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,9 +364,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mos.dit.MedicalAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -376,15 +386,17 @@
 				DEVELOPMENT_TEAM = U5P97KCFM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MedHelper+";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "I would like to record Sessions for demoing to readers";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "I would like to record Sessions for demoing to readers";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "I would like to update your Mindful Sessions for demoing to readers";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,9 +404,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mos.dit.MedicalAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

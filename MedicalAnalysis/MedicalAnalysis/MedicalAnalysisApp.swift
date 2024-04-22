@@ -11,7 +11,8 @@ import SwiftUI
 struct MedicalAnalysisApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            PatientListView()
         }
     }
 }
+

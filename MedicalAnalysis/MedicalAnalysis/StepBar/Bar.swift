@@ -14,8 +14,6 @@ struct BarMarkChart: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
-                Text("Количество шагов по дням недели")
-                    .font(.system(.largeTitle, weight: .semibold))
                 VStack {
                     if !model.steps.isEmpty {
                         Chart {
@@ -28,13 +26,10 @@ struct BarMarkChart: View {
                         }
                     } else {
                         VStack(alignment: .center) {
-                            Text("Данных о пройденых шагах не найдено")
+                            Text("Данных о активности не найдено")
                         }
                     }
                 }.frame(height: 300)
-                Text("""
-                     Подсчет шагов - количество шагов, сделанных Вами за день. Шагомеры и цифровые трекеры активности могут помочь Вам в подсчете шагов. Эти устройства подсчитывают шаги при любой активности, похожей на шагание: ходьбе, беге, подьеме по лестнице, катании на беговых лыжах и даже движении при повседневных домашних делах.
-                     """)
             }
         }
     }

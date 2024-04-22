@@ -6,6 +6,7 @@
 //
 import Foundation
 import HealthKit
+import CoreML
 
 class HealthStore: ObservableObject {
 
@@ -66,16 +67,16 @@ class HealthStore: ObservableObject {
         }
     }
     
-    var mlModel = MlModelForDiplom_1()
-    
+    var mlModel: MlModelForDiplom_1 = try! MlModelForDiplom_1(configuration: .init())
+
     func predictMLExt(model: DiabetPredictModelNew) -> Int64 {
-        guard let mlOutput = try? mlModel.prediction(   gender: model.gender ?? "",
-                                                        age: model.age ?? 0.0,
-                                                        hypertension: model.hypertension ?? 0,
-                                                        heart_disease: model.heart_disease ?? 0,
-                                                        bmi: model.bmi ?? 0.0,
-                                                        HbA1c_level: model.hb ?? 0.0,
-                                                        blood_glucose_level: model.blood ?? 0) else {
+        guard let mlOutput = try? mlModel.prediction(   gender: model.gender,
+                                                        age: model.age,
+                                                        hypertension: model.hypertension,
+                                                        heart_disease: model.heart_disease,
+                                                        bmi: model.bmi,
+                                                        HbA1c_level: model.hb,
+                                                        blood_glucose_level: model.blood) else {
             fatalError("error")
         }
         return mlOutput.diabetes
