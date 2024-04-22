@@ -10,34 +10,42 @@
 		173591492BBD95D100F7494A /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173591452BBD95D100F7494A /* HealthStore.swift */; };
 		1735914A2BBD95D100F7494A /* ML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173591462BBD95D100F7494A /* ML.swift */; };
 		1735914B2BBD95D100F7494A /* MlModelForDiplom 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 173591472BBD95D100F7494A /* MlModelForDiplom 1.mlmodel */; };
-		1735914D2BBD99B700F7494A /* TabBarView_DIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1735914C2BBD99B700F7494A /* TabBarView_DIS.swift */; };
 		1735914F2BBD99F500F7494A /* StepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1735914E2BBD99F500F7494A /* StepBarView.swift */; };
 		173591512BBD9B8900F7494A /* DiabetPredictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173591502BBD9B8900F7494A /* DiabetPredictView.swift */; };
 		173A0C482BD16E21003D1C9B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0C472BD16E21003D1C9B /* MenuView.swift */; };
-		176412752BA1B28300746175 /* DoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176412742BA1B28300746175 /* DoctorView.swift */; };
+		176412752BA1B28300746175 /* PatientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176412742BA1B28300746175 /* PatientListView.swift */; };
 		177059D72B4C31BC0047322B /* MedicalAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */; };
 		177059DB2B4C31C20047322B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177059DA2B4C31C20047322B /* Assets.xcassets */; };
 		177059DE2B4C31C20047322B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177059DD2B4C31C20047322B /* Preview Assets.xcassets */; };
-		177059EA2B4C344A0047322B /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059E92B4C344A0047322B /* Bar.swift */; };
-		177059ED2B4CCBC60047322B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059EC2B4CCBC60047322B /* Model.swift */; };
+		177059ED2B4CCBC60047322B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177059EC2B4CCBC60047322B /* StepModel.swift */; };
+		17A680772BD68F4D006BC0A8 /* DiabetPredictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A680762BD68F4D006BC0A8 /* DiabetPredictModel.swift */; };
+		17A6807A2BD68FAE006BC0A8 /* AboutDoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A680792BD68FAE006BC0A8 /* AboutDoctorView.swift */; };
+		17A6807D2BD6906E006BC0A8 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6807C2BD6906E006BC0A8 /* UserListModel.swift */; };
+		17A680802BD695E1006BC0A8 /* AboutPatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6807F2BD695E1006BC0A8 /* AboutPatientView.swift */; };
+		17A680822BD69C25006BC0A8 /* UploadNewMedDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A680812BD69C25006BC0A8 /* UploadNewMedDataView.swift */; };
+		17A680842BD6A6C5006BC0A8 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A680832BD6A6C4006BC0A8 /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		173591452BBD95D100F7494A /* HealthStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		173591462BBD95D100F7494A /* ML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ML.swift; sourceTree = "<group>"; };
 		173591472BBD95D100F7494A /* MlModelForDiplom 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MlModelForDiplom 1.mlmodel"; sourceTree = "<group>"; };
-		1735914C2BBD99B700F7494A /* TabBarView_DIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView_DIS.swift; sourceTree = "<group>"; };
 		1735914E2BBD99F500F7494A /* StepBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarView.swift; sourceTree = "<group>"; };
 		173591502BBD9B8900F7494A /* DiabetPredictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetPredictView.swift; sourceTree = "<group>"; };
 		173A0C472BD16E21003D1C9B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		176412742BA1B28300746175 /* DoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorView.swift; sourceTree = "<group>"; };
+		176412742BA1B28300746175 /* PatientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListView.swift; sourceTree = "<group>"; };
 		177059D32B4C31BC0047322B /* MedicalAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalAnalysisApp.swift; sourceTree = "<group>"; };
 		177059DA2B4C31C20047322B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177059DD2B4C31C20047322B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		177059E82B4C330E0047322B /* MedicalAnalysis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MedicalAnalysis.entitlements; sourceTree = "<group>"; };
-		177059E92B4C344A0047322B /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
-		177059EC2B4CCBC60047322B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		177059EC2B4CCBC60047322B /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		17A680762BD68F4D006BC0A8 /* DiabetPredictModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetPredictModel.swift; sourceTree = "<group>"; };
+		17A680792BD68FAE006BC0A8 /* AboutDoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDoctorView.swift; sourceTree = "<group>"; };
+		17A6807C2BD6906E006BC0A8 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		17A6807F2BD695E1006BC0A8 /* AboutPatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPatientView.swift; sourceTree = "<group>"; };
+		17A680812BD69C25006BC0A8 /* UploadNewMedDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadNewMedDataView.swift; sourceTree = "<group>"; };
+		17A680832BD6A6C4006BC0A8 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 				173591452BBD95D100F7494A /* HealthStore.swift */,
 				173591462BBD95D100F7494A /* ML.swift */,
 				173591472BBD95D100F7494A /* MlModelForDiplom 1.mlmodel */,
+				177059EC2B4CCBC60047322B /* StepModel.swift */,
 			);
 			path = "ML + HealthKit";
 			sourceTree = "<group>";
@@ -64,7 +73,8 @@
 		17597E742BBDAD2400395BCA /* PatientsList */ = {
 			isa = PBXGroup;
 			children = (
-				176412742BA1B28300746175 /* DoctorView.swift */,
+				176412742BA1B28300746175 /* PatientListView.swift */,
+				17A6807C2BD6906E006BC0A8 /* UserListModel.swift */,
 			);
 			path = PatientsList;
 			sourceTree = "<group>";
@@ -73,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				173591502BBD9B8900F7494A /* DiabetPredictView.swift */,
+				17A680762BD68F4D006BC0A8 /* DiabetPredictModel.swift */,
 			);
 			path = DiabetPredictView;
 			sourceTree = "<group>";
@@ -81,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				1735914E2BBD99F500F7494A /* StepBarView.swift */,
-				177059E92B4C344A0047322B /* Bar.swift */,
 			);
 			path = StepBar;
 			sourceTree = "<group>";
@@ -89,6 +99,7 @@
 		177059CA2B4C31BC0047322B = {
 			isa = PBXGroup;
 			children = (
+				17A680832BD6A6C4006BC0A8 /* AuthView.swift */,
 				177059D52B4C31BC0047322B /* MedicalAnalysis */,
 				177059D42B4C31BC0047322B /* Products */,
 			);
@@ -108,14 +119,13 @@
 				177059E82B4C330E0047322B /* MedicalAnalysis.entitlements */,
 				173591482BBD95D100F7494A /* ML + HealthKit */,
 				17597E742BBDAD2400395BCA /* PatientsList */,
+				17A6807B2BD6903A006BC0A8 /* MainAboutUserView */,
+				17A680782BD68F8B006BC0A8 /* Menu */,
 				17597E752BBDAD4100395BCA /* DiabetPredictView */,
 				17597E762BBDAD5100395BCA /* StepBar */,
-				1735914C2BBD99B700F7494A /* TabBarView_DIS.swift */,
-				177059EC2B4CCBC60047322B /* Model.swift */,
-				177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */,
+				17A6807E2BD690A8006BC0A8 /* App */,
 				177059DA2B4C31C20047322B /* Assets.xcassets */,
 				177059DC2B4C31C20047322B /* Preview Content */,
-				173A0C472BD16E21003D1C9B /* MenuView.swift */,
 			);
 			path = MedicalAnalysis;
 			sourceTree = "<group>";
@@ -126,6 +136,32 @@
 				177059DD2B4C31C20047322B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17A680782BD68F8B006BC0A8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				173A0C472BD16E21003D1C9B /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		17A6807B2BD6903A006BC0A8 /* MainAboutUserView */ = {
+			isa = PBXGroup;
+			children = (
+				17A680792BD68FAE006BC0A8 /* AboutDoctorView.swift */,
+				17A6807F2BD695E1006BC0A8 /* AboutPatientView.swift */,
+				17A680812BD69C25006BC0A8 /* UploadNewMedDataView.swift */,
+			);
+			path = MainAboutUserView;
+			sourceTree = "<group>";
+		};
+		17A6807E2BD690A8006BC0A8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				177059D62B4C31BC0047322B /* MedicalAnalysisApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,16 +234,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1735914D2BBD99B700F7494A /* TabBarView_DIS.swift in Sources */,
-				177059ED2B4CCBC60047322B /* Model.swift in Sources */,
+				17A6807A2BD68FAE006BC0A8 /* AboutDoctorView.swift in Sources */,
+				17A680802BD695E1006BC0A8 /* AboutPatientView.swift in Sources */,
+				177059ED2B4CCBC60047322B /* StepModel.swift in Sources */,
+				17A680822BD69C25006BC0A8 /* UploadNewMedDataView.swift in Sources */,
 				1735914B2BBD95D100F7494A /* MlModelForDiplom 1.mlmodel in Sources */,
 				173591512BBD9B8900F7494A /* DiabetPredictView.swift in Sources */,
 				173591492BBD95D100F7494A /* HealthStore.swift in Sources */,
-				177059EA2B4C344A0047322B /* Bar.swift in Sources */,
 				1735914A2BBD95D100F7494A /* ML.swift in Sources */,
 				173A0C482BD16E21003D1C9B /* MenuView.swift in Sources */,
-				176412752BA1B28300746175 /* DoctorView.swift in Sources */,
+				176412752BA1B28300746175 /* PatientListView.swift in Sources */,
 				1735914F2BBD99F500F7494A /* StepBarView.swift in Sources */,
+				17A680842BD6A6C5006BC0A8 /* AuthView.swift in Sources */,
+				17A6807D2BD6906E006BC0A8 /* UserListModel.swift in Sources */,
+				17A680772BD68F4D006BC0A8 /* DiabetPredictModel.swift in Sources */,
 				177059D72B4C31BC0047322B /* MedicalAnalysisApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

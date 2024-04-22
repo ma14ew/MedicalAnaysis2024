@@ -10,12 +10,15 @@ import SwiftUI
 
 
 struct MenuView: View {
+    let withMedcard: Bool
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink(destination: DiabetPredictView()) {
-                    Label("Медкарта", systemImage: "list.bullet.clipboard")
-                        .padding()
+                if withMedcard {
+                    NavigationLink(destination: DiabetPredictView()) {
+                        Label("Медкарта", systemImage: "list.bullet.clipboard")
+                            .padding()
+                    }
                 }
                 NavigationLink(destination: StepBarView()) {
                     Label("Активность", systemImage: "figure.run")
@@ -42,5 +45,5 @@ struct MenuView: View {
 
 
 #Preview {
-    MenuView()
+    MenuView(withMedcard: false)
 }

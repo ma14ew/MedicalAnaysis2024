@@ -1,18 +1,11 @@
 //
-//  Model.swift
+//  DiabetPredictModel.swift
 //  MedicalAnalysis
 //
-//  Created by Матвей Матюшко on 09.01.2024.
+//  Created by Матвей Матюшко on 22.04.2024.
 //
 
 import Foundation
-
-struct Step: Identifiable {
-    let id = UUID()
-    let count: Int
-    //    let date: Date
-    let date: String
-}
 
 struct DiabetPredictModelNew {
     var gender: String
