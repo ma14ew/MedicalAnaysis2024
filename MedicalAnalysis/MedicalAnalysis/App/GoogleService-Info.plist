@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBLCUIfT0axZKmdHzw2ZgMGiZsXFoRHlyc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>480569542927</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.mat.MedicalAnalysis</string>
+	<key>PROJECT_ID</key>
+	<string>medicalanalysis-2ac55</string>
+	<key>STORAGE_BUCKET</key>
+	<string>medicalanalysis-2ac55.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:480569542927:ios:bc7a122b649dd33c76d67a</string>
+</dict>
+</plist>

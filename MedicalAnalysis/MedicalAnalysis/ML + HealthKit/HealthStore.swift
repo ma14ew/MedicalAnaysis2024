@@ -12,13 +12,47 @@ class HealthStore: ObservableObject {
 
     @Published var steps: [Step] = []
     @Published var healthStore: HKHealthStore?
-    
+    @Published var models = [DiabetPredictModelNew(gender: "Female",
+                                                   age: 64,    // 1
+                                                   hypertension: 0,
+                                                   heart_disease: 0,
+                                                   bmi: 39.0,
+                                                   hb: 8.8,
+                                                   blood: 220),
+                             DiabetPredictModelNew(  gender: "Female",
+                                                     age: 59,  // 1
+                                                     hypertension: 1,
+                                                     heart_disease: 0,
+                                                     bmi: 32.24,
+                                                     hb: 6.5,
+                                                     blood: 220),
+                             DiabetPredictModelNew(  gender: "Female",
+                                                     age: 59,  // 1
+                                                     hypertension: 1,
+                                                     heart_disease: 0,
+                                                     bmi: 32.24,
+                                                     hb: 6.5,
+                                                     blood: 220),
+                             DiabetPredictModelNew(gender: "Male",
+                                                   age: 56,   // 1
+                                                   hypertension: 1,
+                                                   heart_disease: 0,
+                                                   bmi: 31.77,
+                                                   hb: 6.1,
+                                                   blood: 140)]
+    @Published var modelsView: DiabetPredictModelNewView = DiabetPredictModelNewView()
+
+    func makeData() {
+        modelsView = makeDataForView(model: models[0])
+    }
+
     init() {
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
         } else {
             print("error")
         }
+        modelsView = makeDataForView(model: models[0])
     }
 
     private func makeSimpleDate(date: Date) -> String {
@@ -59,14 +93,14 @@ class HealthStore: ObservableObject {
     func requestAuthorization() async {
         guard let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount) else { return }
         guard let healthStore = self.healthStore else { return }
-        
+
         do {
             try await healthStore.requestAuthorization(toShare: [], read: [stepType])
         } catch {
             print("2error")
         }
     }
-    
+
     var mlModel: MlModelForDiplom_1 = try! MlModelForDiplom_1(configuration: .init())
 
     func predictMLExt(model: DiabetPredictModelNew) -> Int64 {
@@ -81,4 +115,18 @@ class HealthStore: ObservableObject {
         }
         return mlOutput.diabetes
     }
+
+
+    func makeDataForView(model: DiabetPredictModelNew) -> DiabetPredictModelNewView {
+        DiabetPredictModelNewView(gender: model.gender == "Women" ? "Женщина" : "Мужчина",
+                                  age: String(model.age.rounded(.awayFromZero)),
+                                  hypertension: model.hypertension == 1 ? "Да": "Нет",
+                                  heart_disease: model.heart_disease == 1 ? "Да": "Нет",
+                                  bmi: String(model.bmi),
+                                  hb: String(model.hb),
+                                  blood: String(model.blood))
+    }
 }
+
+
+

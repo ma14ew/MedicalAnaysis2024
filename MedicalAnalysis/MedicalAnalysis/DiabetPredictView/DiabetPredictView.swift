@@ -10,60 +10,62 @@ import SwiftUI
 
 struct DiabetPredictView: View {
     @ObservedObject var workModel = HealthStore()
-    @State var models = [DiabetPredictModelNew(gender: "Female",
-                                               age: 64,    // 1
-                                               hypertension: 0,
-                                               heart_disease: 0,
-                                               bmi: 39.0,
-                                               hb: 8.8,
-                                               blood: 220),
-                         DiabetPredictModelNew(  gender: "Female",
-                                                 age: 59,  // 1
-                                                 hypertension: 1,
-                                                 heart_disease: 0,
-                                                 bmi: 32.24,
-                                                 hb: 6.5,
-                                                 blood: 220),
-                         DiabetPredictModelNew(gender: "Male",
-                                               age: 56,   // 1
-                                               hypertension: 1,
-                                               heart_disease: 0,
-                                               bmi: 31.77,
-                                               hb: 6.1,
-                                               blood: 140)]
     var body: some View {
         NavigationStack{
             PersonsData(workModel: workModel,
-                        model: models[0])
+                        model: workModel.modelsView, 
+                        modelMl: workModel.models[1])
         }.navigationTitle("Медкарта")
+            .onAppear() {
+                workModel.makeData()
+            }
     }
 }
 
 
 struct PersonsData: View {
     @ObservedObject var workModel = HealthStore()
-    @State var model: DiabetPredictModelNew
+    @State var model: DiabetPredictModelNewView
+    @State var modelMl: DiabetPredictModelNew
     @State var diabString: String = "Нажмите для рассчета"
+    @State var isEdit = false
     var body: some View {
         List {
-            InfoItem(nameOfItem: "Пол",
-                     value: model.gender)
-            InfoItem(nameOfItem: "Возраст",
-                     value: String(model.age))
-            InfoItem(nameOfItem: "Наличие гипертонии",
-                     value: String(model.hypertension))
-            InfoItem(nameOfItem: "Наличие сердечных заболеваний",
-                     value: String(model.heart_disease))
-            InfoItem(nameOfItem: "Индекс массы тела",
-                     value: String(model.bmi))
-            InfoItem(nameOfItem: "Глюкоза",
-                     value: String(model.hb))
-            InfoItem(nameOfItem: "Сахар",
-                     value: String(model.blood))
-            InfoItemWithButton(workModel: workModel,
-                               model: model,
-                               nameOfItem: "Показания",
-                               diabString: diabString)
+            if isEdit {
+                InfoItem(nameOfItem: "Пол",
+                         value: model.gender ?? "")
+                InfoItem(nameOfItem: "Возраст",
+                         value: model.age ?? "")
+                InfoItem(nameOfItem: "Наличие гипертонии",
+                         value: model.hypertension ?? "")
+                InfoItem(nameOfItem: "Наличие сердечных заболеваний",
+                         value: model.heart_disease ?? "")
+                InfoItem(nameOfItem: "Индекс массы тела",
+                         value: model.bmi ?? "")
+                InfoItem(nameOfItem: "Глюкоза",
+                         value: model.hb ?? "")
+                InfoItem(nameOfItem: "Сахар",
+                         value: model.blood ?? "")
+                InfoItemWithButton(workModel: workModel,
+                                   model: modelMl,
+                                   nameOfItem: "Показания",
+                                   diabString: diabString)
+            } else {
+                InfoItemWithTextField(nameOfItem: "Пол",
+                                      value: model.gender ?? "")
+                InfoItemWithTextField(nameOfItem: "Возраст",
+                                      value: model.age ?? "")
+                InfoItemWithTextField(nameOfItem: "Наличие гипертонии",
+                                      value: model.hypertension ?? "")
+                InfoItemWithTextField(nameOfItem: "Наличие сердечных заболеваний",
+                                      value: model.heart_disease ?? "")
+                InfoItemWithTextField(nameOfItem: "Индекс массы тела",
+                                      value: model.bmi ?? "")
+                InfoItemWithTextField(nameOfItem: "Глюкоза",
+                                      value: model.hb ?? "")
+                InfoItemWithTextField(nameOfItem: "Сахар",
+                                      value: model.blood ?? "")
+            }
         }
     }
 }
@@ -77,6 +79,21 @@ struct InfoItem: View {
             Text("\(nameOfItem)")
                 .foregroundStyle(.gray)
             Text(value)
+                .fontWeight(.bold)
+        }
+    }
+}
+
+struct InfoItemWithTextField: View {
+    let nameOfItem: String
+    @State var value: String
+    var body: some View {
+        VStack(alignment: .leading,
+               spacing: 5) {
+            Text("\(nameOfItem)")
+                .foregroundStyle(.gray)
+            TextField("", text: $value)
+
                 .fontWeight(.bold)
         }
     }
@@ -109,6 +126,8 @@ struct InfoItemWithButton: View {
         }
     }
 }
+
+
 
 #Preview {
     DiabetPredictView()

@@ -23,3 +23,13 @@ struct DiabetPredictModel {
     var hb: String
     var blood: String
 }
+
+struct DiabetPredictModelNewView {
+    var gender: String?
+    var age: String?
+    var hypertension: String?
+    var heart_disease: String?
+    var bmi: String?
+    var hb: String?
+    var blood: String?
+}
